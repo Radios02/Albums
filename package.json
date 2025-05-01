@@ -1,0 +1,22 @@
+{
+  "name": "music-album-app",
+  "version": "1.0.0",
+  "description": "A web application for managing music albums, allowing users to add, edit, and delete albums.",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "keywords": []
+}

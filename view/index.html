@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Album App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Music Album App</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Year</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="album-table-body">
+        </tbody>
+    </table>
+
+    <h2>Add New Album</h2>
+    <form id="add-album-form">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="artist" placeholder="Artist" required>
+        <input type="date" id="releaseDate" placeholder="releaseDate" required>
+        <button type="submit">Add Album</button>
+    </form>
+</body>
+</html>

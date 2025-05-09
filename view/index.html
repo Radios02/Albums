@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
-<body>
+<body> 
     <h1>Music Album App</h1>
+    <h2>Search Albums</h2>
+    <input type="text" id="search-bar" placeholder="Search by title or artist">
+    <h2>Add New Album</h2>
+    <form id="add-album-form">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="artist" placeholder="Artist" required>
+        <input type="date" id="releaseDate" placeholder="releaseDate" required>
+        <button type="submit">Add Album</button>
+    </form>
     <table>
         <thead>
             <tr>
@@ -21,13 +30,5 @@
         <tbody id="album-table-body">
         </tbody>
     </table>
-
-    <h2>Add New Album</h2>
-    <form id="add-album-form">
-        <input type="text" id="title" placeholder="Title" required>
-        <input type="text" id="artist" placeholder="Artist" required>
-        <input type="date" id="releaseDate" placeholder="releaseDate" required>
-        <button type="submit">Add Album</button>
-    </form>
 </body>
 </html>

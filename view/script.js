@@ -93,6 +93,22 @@ function deleteAlbum(id) {
     .catch(error => console.error('Error deleting album:', error));
 }
 
+document.getElementById('search-bar').addEventListener('input', function (e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const tableRows = document.querySelectorAll('#album-table-body tr');
+
+    tableRows.forEach(row => {
+        const title = row.querySelector('td:nth-child(1)').textContent.toLowerCase();
+        const artist = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
+
+        if (title.includes(searchTerm) || artist.includes(searchTerm)) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const albumTableBody = document.getElementById('album-table-body');
     const addAlbumForm = document.getElementById('add-album-form');
